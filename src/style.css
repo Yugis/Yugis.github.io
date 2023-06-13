@@ -2,11 +2,15 @@
 @tailwind components;
 
 .card {
-	@apply bg-gray-100 py-10 px-5 mb-8 shadow-md rounded-lg shadow-xl;
+	@apply bg-black border-solid border border-amber-900 py-10 px-5 mb-8 shadow-lg shadow-amber-500 rounded-lg;
 }
 
-.card-header {
+/* .card-header {
 	@apply text-base font-sans font-medium tracking-widest leading-none text-center bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-400 mb-5;
+} */
+
+.card-header {
+	@apply text-base font-sans font-medium tracking-widest leading-none text-center text-gray-200 mb-5;
 }
 
 .card-body {
@@ -14,15 +18,23 @@
 }
 
 .widget {
-	@apply bg-white py-5 px-5 mb-8 shadow-md rounded-lg;
+	@apply bg-black border-solid border-2 border-gray-500 py-5 px-5 mb-8 shadow-sm shadow-gray-500 rounded-lg;
 }
+
+/* .widget-header {
+	@apply text-xl font-medium tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-400 mb-4 px-2;
+} */
 
 .widget-header {
-	@apply text-xl font-medium tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-400 mb-4 px-2;
+	@apply text-xl font-medium tracking-wide text-white mb-4 px-2;
 }
 
-ul li p {
+/* ul li p {
 	@apply text-xl leading-snug font-sans bg-clip-text text-transparent bg-gradient-to-b from-pink-500 to-red-600;
+} */
+
+ul li p {
+	@apply text-xl leading-snug font-sans bg-clip-text text-transparent bg-gradient-to-b from-red-400 to-amber-500;
 }
 
 ul.tools li {
@@ -30,16 +42,18 @@ ul.tools li {
 }
 
 ul.list-none li {
-	@apply py-1 tracking-wider leading-relaxed font-sans text-gray-800 text-sm;
+	@apply py-1 tracking-wider leading-relaxed font-sans text-gray-200 text-sm;
 }
 
 @screen lg {
 	.card {
 		@apply mx-3;
 	}
+
 	.card-header {
 		@apply text-justify;
 	}
+
 	.widget {
 		@apply ml-3 mt-0;
 	}
@@ -61,7 +75,7 @@ ul.list-none li {
 	}
 
 	ul.list-none li {
-		@apply font-sans font-normal text-gray-700 text-lg;
+		@apply font-sans font-normal text-gray-200 text-lg;
 	}
 }
 
