@@ -63,7 +63,8 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 Remove the default font size and weight for headings.
 */
 
-h1 {
+h1,
+h3 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -216,6 +217,7 @@ Removes the default spacing and border for appropriate elements.
 
 
 h1,
+h3,
 p {
   margin: 0;
 }
@@ -634,6 +636,10 @@ ul.list-none li {
   margin-bottom: 1rem !important;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem !important;
+}
+
 .mb-8 {
   margin-bottom: 2rem !important;
 }
@@ -976,6 +982,11 @@ ul.list-none li {
 
 .tracking-widest {
   letter-spacing: 0.1em !important;
+}
+
+.text-amber-400 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(251 191 36 / var(--tw-text-opacity)) !important;
 }
 
 .text-blue-300 {
