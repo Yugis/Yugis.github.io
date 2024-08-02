@@ -24,6 +24,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -59,7 +60,7 @@
 							<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
 								<div class="profile-thumb" style="background: url(images/img.jpeg);"></div>
 								<h1><span>Omar Tarek</span></h1>
-								<h3><span>Full Stack Developer / Cloud Enthusiast</span></h3>
+								<h3><span class="typing" id="typing"></span></h3>
 								<p>
 								<ul class="fh5co-social-icons">
 									<!-- <li><a href="#"><i class="icon-twitter2"></i></a></li> -->
@@ -622,8 +623,8 @@
 					</div>
 				</div>
 				<!-- <div class="row"> -->
-				<div class="" style="display: flex; justify-content: center;">
-					<div class="text-center animate-box">
+				<div class="lg:flex">
+					<div class="text-center animate-box mb-4">
 						<a href="#" class="work" style="background-image: url(images/github.png); background-size: 28rem auto; max-width: 34rem;">
 							<div class="desc" style="padding: 10px;">
 								<h3>Hosted a website on GitHub pages with a secure custom domain name</h3>
@@ -631,7 +632,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="text-center animate-box">
+					<div class="text-center animate-box mb-4">
 						<a href="#" class="work" style="background-image: url(images/wordpress.png); background-size: 28rem auto; max-width: 34rem;">
 							<div class="desc" style="padding: 10px;">
 								<h3>Deployed a fully functional WordPress App to an EC2 instance</h3>
@@ -639,7 +640,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="text-center animate-box">
+					<div class="text-center animate-box mb-4">
 						<a href="#" class="work" style="background-image: url(images/eb.png); background-size: 28rem auto; max-width: 34rem;">
 							<div class="desc" style="padding: 10px;">
 								<h3>Deployed a sample application to Elastic Beanstalk, uploaded a new version, and modified its configuration to add a second Auto Scaling instance. </h3>
@@ -703,7 +704,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<p>&copy; 2024 Omar Tarek. All Rights Reserved. <br>
+					<p>&copy; 2024 Omar Tarek. Hosted On AWS. <br>
 				</div>
 			</div>
 		</div>
@@ -725,13 +726,12 @@
 	<script src="js/jquery.stellar.min.js"></script>
 	<!-- Easy PieChart -->
 	<script src="js/jquery.easypiechart.min.js"></script>
-	<!-- Google Map -->
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
 
 	<!-- Main -->
 	<script src="js/main.js"></script>
+
+	<!-- Title Script -->
+	<script src="js/titleScript.js"></script>
 
 </body>
 

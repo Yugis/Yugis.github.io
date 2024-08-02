@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
 body {
@@ -1288,6 +1288,20 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0;
+}
+
+.typing {
+  font-size: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
 }
 
 /*# sourceMappingURL=style.css.map */
